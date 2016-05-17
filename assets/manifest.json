@@ -1,0 +1,48 @@
+{
+  "dependencies": {
+    "main.js": {
+      "files": [
+        "scripts/main.js",
+
+          "scripts/spin.js",
+          "scripts/functions.js",
+          "scripts/js-validator/validator.min.js",
+          "scripts/js-wow/wow.min.js",
+          "scripts/js-examinar.js",
+	        "../bower_components/plupload/js/plupload.full.min.js",
+          "scripts/bootstrap-paginator.min.js"
+      ],
+      "main": true
+    },
+    "main.css": {
+      "files": [
+        "styles/main.scss"
+      ],
+      "main": true
+    },
+    "jquery.js": {
+      "bower": ["jquery"]
+    },
+    "modernizr.js": {
+      "bower": ["modernizr"]
+    }
+  },
+  "config": {
+    "devUrl": "http://192.168.1.50/2860-jataplangourmet/"
+  },
+
+
+
+  "*************INSTRUCCIONES*********** ::: poner después de la línea 7 todos los scrips que se necesiten para el proyecto":{
+
+      "FUNCIONES PARA CARGADOR SPIN" : "scripts/spin.js",
+      "FUNCIONES PARA CARGAR JQUERY EASE " : "sudo bower install jquery.easing  --save --allow-root",
+      "FUNCIONES PARA EXAMINAR UPLOAD bajar de componenetes la carpeta js-examinar y subir a assets/scripts" : "scripts/js-examinar/js/plupload.full.min.js",
+      "FUNCIONES PARA EXAMINAR UPLOAD bajar de componenetes la carpeta js-examinar y subir a assets/scripts" : "scripts/js-examinar/js/js-examinar.js",
+
+      "FUNCIONES VALIDADOR FORMULARIOS bajar de componenetes y subir a assets/scripts" : "scripts/js-validator/validator.min.js"
+  }
+
+
+
+}

@@ -1,0 +1,806 @@
+/*
+GENERALES
+*/
+*{
+	transition:all 0.3s ease;
+}
+
+body{
+	background-color: $blanco;
+	font-family: "Klavika_Rg";
+	color: $blanco;
+	overflow:hidden;
+}
+
+.modal-header{
+	color:$azul_jata;
+	font-family: "Klavika_Rg";
+	border:none;
+	padding-left: 50px;
+	padding-right: 15px;
+	.modal-title {
+	    margin-top: 30px;
+	    color:$azul_jata;
+	    font-size: 40px;
+	}
+}
+.modal-body {
+	color:$azul_jata;
+	font-family: "Klavika_Rg";
+	padding-left: 50px;
+	padding-right: 50px;
+	ul{
+		list-style:none;
+		padding-left: 30px;
+		li{
+			padding-left: 0;
+			text-indent: -8px;
+			&:before{
+				content:"- ";
+			}
+		}
+	}
+	a{
+		color:$azul_jata;
+		text-decoration: underline;
+	}
+}
+.modal-content {
+	-webkit-box-shadow: none;
+	-moz-box-shadow:none;
+	box-shadow: none;
+	border:none;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+}
+h1{
+	color:$azul_jata;
+	font-size: 54px;
+	font-family: "Klavika_Bd";
+	span{
+		font-family: "Klavika_Rg";
+		font-size: 50px;
+
+	}
+}
+.fs-content-vertical {
+	h2 {line-height: 50px;}
+}
+h2{
+	font-family: "Klavika_Bd";
+	color:$azul_jata;
+	font-size: 64px;
+	@media(max-width:$responsive-xs){
+		font-size: 54px;
+	}
+}
+h3{
+	font-family: "Klavika_Bd";
+	font-size: 24px;
+	color:$azul_jata;
+	@media(max-width:$responsive-xs){
+		font-size: 18px;
+	}
+}
+#logo {
+	position: absolute;
+
+}
+#section-inicio{
+	background-color: $blanco;
+	background-image: url("../images/cabecera-madera-fondo.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top center;
+	padding-top: 75px;
+	padding-bottom: 22px;
+	margin-top: 40px;
+	height: 750px;
+	@media(max-width:$responsive-xs){
+		background-position: 54% center;
+		margin-top:56px;
+		height: auto;
+	}
+	
+	h1{
+		@media(max-width:$responsive-xs){
+			font-size: 30px;
+			span{
+				font-size: 40px;
+
+			}
+		}
+	}
+	h2{
+		@media(max-width:$responsive-xs){
+			font-size: 40px;
+			line-height: 15px;
+		}
+	}
+	p{
+		font-size: 18px;
+		color: #3c3c3c;
+		font-family: "Klavika_Rg";
+		line-height: 22px;
+		@media(max-width:$responsive-xs){
+			margin-right: 40%;
+			line-height: 20px;
+			font-size: 16px;
+		}
+		a{
+			color:$rojo;
+			font-family: "Klavika_Rg";
+			font-size: 18px;
+			padding: 0px;
+			margin-top: -2px;
+			text-decoration: underline;
+			line-height: 10px;
+			@media(max-width:$responsive-xs){
+				margin-right: 5px;
+			}
+		}
+		br{
+			@media(max-width:$responsive-xs){
+				display: block;
+				float: left;
+				width: 5px;
+			}
+		}
+	}
+	.menu-over {
+		position: absolute;
+		&.menu-izq-top {
+			left: 0;
+			top: 0;
+		}
+		&.menu-izq-down {
+			left: 0;
+			bottom: 0;
+		}
+		&.menu-drcha-top {
+			right: 0;
+			top: 0;
+		}
+		&.menu-drcha-down {
+			right: 0;
+			bottom: 0;
+		}
+	}
+
+}
+
+#section-codigo{
+	margin-top:-80px;
+	
+	padding-bottom: 22px;
+	@media(max-width:$responsive-xs){
+		background-position: 54% center;
+		margin-top:56px;
+		height: auto;
+	}
+	.banda-azul{
+		-webkit-box-shadow: 0px 5px 5px 0px rgba(104,151,255,0.4);
+		-moz-box-shadow: 0px 5px 5px 0px rgba(104,151,255,0.4);
+		box-shadow: 0px 5px 5px 0px rgba(104,151,255,0.4);
+		background-color: $azul_jata;
+		opacity: 0.7;
+		color:$blanco;
+		height: 80px;
+		h1{
+				color:$blanco;
+			font-size: 40px;
+			font-family: 'Klavika_Rg';
+		}	
+	}
+	.fondo-blanco{
+		background-color: $blanco;
+	}
+	.inner-contenedor-formulario {
+		//max-width: 350px;
+	}
+	form{
+		font-family: "Klavika_Rg";
+		.btn-100{
+			width: 1%;
+			@media(max-width:$responsive-xs){
+				display: block;
+				clear: both;
+				width: 100%;
+			}
+
+		}
+		input,select{
+			padding: 5px;
+			-webkit-border-radius: 0px;
+			-moz-border-radius: 0px;
+			border-radius: 0px;
+			border: 3px solid $negro;
+			color:$azul_claro_jata;
+			background-color: $blanco;
+			opacity: 1;
+			text-align: center;
+			font-size: 22px;
+			height: 54px;
+			padding-top: 10px;
+			font-family: "Klavika_Rg";
+		}
+		#itDNI{
+			text-transform: uppercase;
+		}
+		.btn-canjear {
+			background-color: $negro;
+			border-color: transparent;
+			border-radius: 0px;
+			color: #fff;
+			font-size: 24px;
+			height: 54px;
+			padding: 10px 30px;
+			text-shadow: 1px 1px 1px $gris;
+			font-family: "Klavika_Rg";
+			@media(max-width:$responsive-xs){
+				width: 100%;
+			}
+
+			&:hover{
+				background-color: $negro;
+				color:$azul_claro_jata;
+			}
+		}
+		.col-codigo-xs{
+			@media(max-width:$responsive-xs){
+				margin:auto;
+				width: 100%;
+			}
+		}
+	}
+	.js-spinner-holder {
+		&#sp-1{
+		position: relative;
+		z-index:999;
+		margin-top:-40px;
+		height: 40px;
+		}
+	}
+	.btn{
+		background-color: $negro;
+		color:#FFF;
+		border-radius: 0;
+		border:none;
+		padding-left: 30px;
+		padding-right: 30px;
+		font-family: 'Klavika_Rg';
+		font-size: 24px;
+		height: 54px;
+		padding-top: 10px;
+
+		&:hover{
+				background-color: $negro;
+				color:$azul_claro_jata;
+			}
+	}
+	.fa{
+		font-size: 30px;
+		color:$negro;
+		line-height: 0;
+	}
+	.col-form-bono{
+		display: none;
+	}
+}
+
+
+#section-participa{
+	background-image: url("../images/mecanica-fondo-madera.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top center;
+	padding-top: 100px;
+	padding-bottom: 370px;
+	margin-top: 40px;
+	
+	color:$gris;
+	font-family: "Klavika_Rg";
+	font-size: 12px;
+	@media(max-width:$responsive-xs){
+		padding-top: 0;
+		padding-bottom: 10px;
+	}
+	.platos-over {
+		position: absolute;
+		top: 140px;
+		&.plato-izq {
+			left: 0;
+		}
+		&.plato-drcha {
+			right: 0;
+		}
+	}
+	.sombra-azul{
+		-webkit-box-shadow: 4px 5px 5px 0px rgba(0,29,133,0.4);
+		-moz-box-shadow: 4px 5px 5px 0px rgba(0,29,133,0.4);
+		box-shadow: 4px 5px 5px 0px rgba(0,29,133,0.4);
+	}
+	h2{
+		font-family: "Klavika_Rg";
+		font-size: 36px;
+		text-align: center;
+		color: #385e45;
+		margin-bottom: 30px;
+		@media(max-width:$responsive-xs){
+			font-size: 30px;
+			line-height: 32px;
+		}
+	}
+	img{
+		margin-bottom: 20px;
+		min-height: 52px;
+	}
+	.cabecera-pasos{
+		.titulo{
+			background-color: $azul_jata;
+			opacity: 0.7;
+			color:$blanco;
+			margin-bottom: 0;
+		    margin-left: 0;
+		    margin-right: 0;
+		    padding-bottom: 12px;
+		    padding-right: 0;
+		    padding-top: 18px;
+		    font-family: 'Klavika_Rg';
+		    font-size: 40px;
+		}
+	}
+	.bt-siguiente{
+			background-color: $negro;
+			border-color: transparent;
+			border-radius: 0px;
+			color: #fff;
+			font-size: 24px;
+			height: 50px;
+			padding: 8px 30px;
+			text-shadow: 1px 1px 1px $gris;
+			font-family: "Klavika_Rg";
+			@media(max-width:$responsive-xs){
+				width: 100%;
+			}
+
+			&:hover{
+				background-color: $negro;
+				color:$azul_claro_jata;
+			}
+		}
+	.formulario-participa{
+		display: none;
+		background-color: $blanco;
+		color:$azul_jata;
+		.btn{
+			background-color: $negro;
+			border-color: transparent;
+			border-radius: 0px;
+			color: #fff;
+			font-size: 24px;
+			height: 40px;
+			padding-left: 30px;
+			padding-right: 30px;
+			padding-top: 5px;
+			padding-bottom: 0px;
+			text-shadow: 1px 1px 1px $gris;
+			font-family: "Klavika_Rg";
+			@media(max-width:$responsive-xs){
+				width: 100%;
+			}
+
+			&:hover{
+				background-color: $negro;
+				color:$azul_claro_jata;
+			}
+		}
+		.btn-file{
+			height: 33px;
+			padding-top: 0px;
+		}
+		.participar{
+			
+		}
+	}
+	.pasos{
+		font-family: "Museo_Sans_Cyrl_100";
+		font-size: 20px;
+		text-align: center;
+		color:$rojo;
+		text-decoration: none;
+		transition:none;
+		
+		
+		.titulo-paso{
+			color:$azul_jata;
+			font-size: 40px;
+			font-family: 'Museo_Sans_Cyrl_100';
+			margin-top: 00px;
+		}	
+		.par{
+			padding-right:0px;
+			.titulo-paso{
+				padding-right: 10px;
+			}
+			.img-paso{
+				margin-right: 40px;
+				margin-top: 20px;
+			}
+			p{
+				color:$azul_jata;	
+				padding-right: 40px;
+				padding-top: 20px;
+				padding-left: 70px;
+				font-size: 18px;
+				line-height: 22px;
+				text-align: right;
+				a{
+					font-family: "Klavika_Rg";
+					color: $azul_claro_jata;
+					font-size: 20px;
+				}
+			}
+			.texto-mini{
+				font-size: 14px;
+				line-height: 18px;
+			}
+
+		}
+		.impar{
+			
+			padding-left: 0px;
+			.titulo-paso{
+				padding-left: 10px;
+				margin-top: 20px;
+			}
+			.img-paso{
+				margin-left: 40px;
+				margin-top: 20px;
+			}
+			p{
+				color:$azul_jata;	
+				padding-left: 40px;
+				padding-top: 0px;
+				padding-right: 90px;	
+				font-size: 18px;
+				line-height: 22px;
+				text-align: left;
+				a{
+					font-weight: normal;
+					text-decoration: none;
+				}
+
+			}
+			.texto-mini{
+				font-size: 14px;
+				line-height: 18px;
+			}
+		}
+
+		.fblanco{
+			background-color: #fff;
+
+		}
+		.fgris{
+			background-color: #f2f2f2;
+		}
+		.comoparticipar{
+			margin-top: -110px;
+			z-index:1;
+		}
+		.paso1{
+			// margin-bottom: -122px;
+			background-image: url(../images/mecanica-paso-1-fondo-b.jpg);
+			background-repeat: no-repeat;
+			background-position: left bottom;
+			height: 300px;
+			
+		}
+		.paso2{
+			// margin-bottom: -122px;
+			background-image: url(../images/mecanica-paso-2-fondo-b.jpg);
+			background-repeat: no-repeat;
+			background-position: right bottom;
+			height: 300px;
+		}
+		.paso3{
+			margin-top: -115px;
+			background-image: url(../images/mecanica-paso-3-fondo-b.jpg);
+			background-repeat: no-repeat;
+			background-position: left bottom;
+			height: 300px;
+		}
+		.paso4{
+			margin-top: -115px;
+			background-image: url(../images/mecanica-paso-4-fondo-b.jpg);
+			background-repeat: no-repeat;
+			background-position: right bottom;
+			height: 300px;
+		}
+		.img-paso-fondo{
+			left:0;
+			bottom: 0px;
+			position: absolute;
+		}
+		
+		.siguiente{
+			margin-top: -80px;
+		}
+	}
+	strong{
+		font-family: "Klavika_Rg";
+		font-size: 12px;
+		text-align: justify;
+		text-justify: inter-word;
+		text-align-last: justify;
+		color:$gris;
+		text-decoration: underline;
+	}
+	p {
+		font-family: "Museo_Sans_Cyrl_100";
+		font-size: 18px;
+		color: $gris;
+		text-align: justify;;
+		
+
+		&.no-cursor{
+			strong{
+				cursor:default;
+				text-decoration: none;
+			}
+		}
+		.fa{
+			font-size: 20px;
+		}
+		&.info{
+			text-align: right;
+		}
+		a{
+			font-family: "Museo_Sans_Cyrl_100";
+			text-decoration: underline;
+			font-size:18px;
+			color:$azul_jata;
+			font-weight: bold;
+		}
+		&.mini{
+			font-size: 14px;
+			text-align: right;
+		}
+	}
+
+	.formulario-pasos{
+		transition:none;
+	}
+
+	.js-menu-scroll{
+		cursor: pointer;
+	}
+	.info-participar{
+		background-color: $azul_jata;
+		opacity: 0.7;
+		color:$blanco;
+		font-size: 24px;
+	    padding-bottom: 35px;
+	    padding-left: 50px;
+	    padding-right: 50px;
+	    padding-top: 45px;	
+		p{
+			color:$blanco;
+			font-size: 24px;
+			line-height: 27px;
+		}
+	}
+	.gracias-participar{
+		display: none;
+		background-color: $blanco;
+		padding-bottom: 80px;
+		padding-top: 80px;
+		color:$azul_jata;
+		font-family: 'Klavika_Rg';
+		.titular{
+			font-size: 70px;
+			font-weight: bold;
+		}
+		p{
+			font-size: 12px;
+			text-align: center;
+			line-height: 15px;
+			color: $azul_jata;
+		}
+		.boton{
+			margin-top: 20px;
+		}
+		.btn{
+		background-color: $negro;
+			border-color: transparent;
+			border-radius: 0px;
+			color: #fff;
+			font-size: 24px;
+			height: 40px;
+			padding: 0px 30px;
+			text-shadow: 1px 1px 1px $gris;
+			font-family: "Klavika_Rg";
+			@media(max-width:$responsive-xs){
+				width: 100%;
+			}
+
+			&:hover{
+				background-color: $negro;
+				color:$azul_claro_jata;
+			}
+		}
+	}
+}
+
+#section-formulario{
+	display: none;
+	background-color: $blanco;
+	padding-bottom: 40px;
+	@media(max-width:$responsive-xs){
+		padding-bottom: 0;
+	}
+}
+#registro_codigo{
+	background-color: $blanco;
+	padding: 0;
+	padding-top: 40px;
+	color: $azul_jata;
+	font-family: "Klavika_Rg";
+	font-size: 12px;
+	transition:none;
+	
+	@media(max-width:$responsive-xs){
+		padding: 0px;
+		margin-top: -10px;
+	}
+	h2{
+		font-family: "Klavika_Bd";
+		font-size: 36px;
+		@media(max-width:$responsive-xs){
+			font-size: 30px;
+			line-height: 32px;
+		}
+	}
+	p.texto{
+		font-family: "Klavika_Bd";
+		font-size: 12px;
+		line-height: 15px;
+		text-align: justify;
+		margin-bottom: 30px;
+		@media(max-width:$responsive-xs){
+			margin-top: 20px;
+		}
+	}
+	textarea{
+		width: 100%;
+		height: 100px;
+		resize: none;
+		padding: 5px;
+		border: none;
+		color:#646464;
+		font-family: 'Museo_Sans_Cyrl_100';
+		font-size: 18px;
+	}
+	input,select{
+		padding: 5px;
+		-webkit-border-radius: 0px;
+		-moz-border-radius: 0px;
+		border-radius: 0px;
+		border-top: 2px solid $gris_boton;
+		border-left: 2px solid $gris_boton;
+		color:#646464;
+		width: 100%;
+		font-family: "Klavika_B";
+		background-color: $blanco;
+		font-family: 'Museo_Sans_Cyrl_100';
+		font-size: 18px;
+	}
+	input{
+		&#check-legal{
+			display: block;
+			width: 1px;height: 1px;border:none;position:absolute;left:-1000px;
+		}
+		&#check_recibir{
+			display: block;
+			width: 1px;height: 1px;border:none;position:absolute;left:-1000px;
+		}
+	}
+	input[type=checkbox].css-checkbox:checked + label.css-label {
+		background-position: 0 -25px;
+	}
+	label{
+		font-family: "Museo_Sans_Cyrl_100";
+		font-size: 15px;
+		font-weight: normal;
+
+		&.checkbox{
+			cursor: pointer;
+			color:$azul_jata;
+			font-weight: normal;
+			background-image: url("../images/check-box.png");
+			background-repeat: no-repeat;
+			height: 25px;
+			padding: 0 0 0 40px;
+			font-family: 'Museo_Sans_Cyrl_100';
+			font-size: 15px;
+			a{
+				text-decoration: underline;
+				color:$azul_jata;
+			}
+		}
+		span{
+			font-family:"Museo_Sans_Cyrl_100";
+		}
+	}
+
+
+	.col-nombre{ padding-right:0px;}
+	.col-telefono{ padding-left:0px;}
+	.col-email{ padding-right:7px;}
+	.col-email2{ padding-left:8px;}
+	.col-cp{ padding-right:0px;}
+	.col-sexo{ padding-left:0px;}
+	.col-legal{padding-right: 0px;}
+	.form-group{
+		margin-bottom: 20px;
+		&.has-error{
+			input,select,textarea{
+				border: 1px solid $error;
+				-webkit-box-shadow: inset 1px 1px 0px 0px rgba(221,221,221,1);
+				-moz-box-shadow: inset 1px 1px 0px 0px rgba(221,221,221,1);
+				box-shadow: inset 1px 1px 0px 0px rgba(221,221,221,1);
+				color: $error;
+			}
+			label{
+				&.checkbox{
+					color: $error;
+					a{
+						color: $error;
+					}
+				}
+			}
+		}
+	}
+	.btn{
+		background-color: $negro;
+			border-color: transparent;
+			border-radius: 0px;
+			color: #fff;
+			font-size: 24px;
+			height: 40px;
+			padding: 0px 30px;
+			text-shadow: 1px 1px 1px $gris;
+			font-family: "Klavika_Rg";
+			@media(max-width:$responsive-xs){
+				width: 100%;
+			}
+
+			&:hover{
+				background-color: $negro;
+				color:$azul_claro_jata;
+			}
+	}
+	.nombreImagenSubida{
+		padding-left: 20px;
+		font-family: "Klavika_Bd";
+		font-size: 11px;
+		color: #fff;
+	}
+	.js-examinar{
+		width: 100%;
+		height: 34px;
+		padding-top: 4px;
+	}
+	.input-group{
+		width: 100%;
+	}
+	.info_comercial{
+		margin-top: 20px;
+		margin-bottom: 20px;
+		font-size: 14px;
+		font-family: 'Museo_Sans_Cyrl_100';
+	}
+}
+

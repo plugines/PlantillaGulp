@@ -1,0 +1,52 @@
+/*
+GENERALES
+*/
+a:focus {
+  outline: none;
+  outline-offset: 0; }
+
+a:active {
+  outline: none;
+  outline-offset: 0; }
+
+body {
+  background-color: #ececec;
+  overflow-x: hidden;
+  font-family: "CenturyGothic"; }
+
+header, footer {
+  position: fixed; }
+
+#registro_codigo {
+  display: none; }
+
+/*section{
+	min-height: 400px;
+}*/
+#section-inicio {
+  background-image: url("../images/fondo_section1_home.jpg");
+  min-height: 611px; }
+
+#section-obsequio {
+  background-image: url("../images/fondo_section2_home.jpg");
+  height: 389px; }
+
+#section-babysebamed {
+  background-image: url("../images/fondo_section3_home.jpg");
+  height: 440px; }
+
+.container-fluid {
+  width: 100%;
+  max-width: 920px; }
+
+.spinner-holder {
+  display: none; }
+
+#contenedor-formulario-datos {
+  display: none; }
+
+/*@media(max-width:$responsive-xs){
+}
+*/
+
+/*# sourceMappingURL=_home.css.map */

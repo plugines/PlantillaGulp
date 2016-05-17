@@ -1,0 +1,84 @@
+
+/* PAGINACION LISTADO */
+.pagination{
+    padding: 0;
+    margin: 20px 0 0 0;
+    ul{
+        display: inline-block;
+        padding-left: 0px;
+        margin: 0px 0px;
+        border-radius: 4px;
+        @media(max-width:$responsive-xs){
+            display: inline-flex;
+        }
+        li{
+            display: inline;
+            a,span{
+                margin: 0 2px;
+                position: relative;
+                float: left;
+                padding: 6px 12px;
+                margin-left: -1px;
+                line-height: 1.42857;
+                color: $azul_claro_jata;
+                text-decoration: none;
+                background-color: #FFF;
+                border: none;
+                cursor: pointer;
+            }
+            &.active{
+                a{
+                    z-index: 2;
+                    color: $azul_jata;
+                    border-color: $bgborde-pagina-active;
+                    font-family: "ubuntubold";
+                }
+            }
+            &:hover{
+                a{
+                    z-index: 2;
+                    color: $azul_jata;
+                    border-color: $bgborde-pagina-over;
+                    font-family: "ubuntubold";
+                }
+            }
+            &:first-child{
+                margin-left: 0px;
+                @media(max-width:$responsive-xs){
+                    display:block;
+                    left:0;
+                    position: absolute;
+                    top:-15px;
+                }
+               &.active{
+                    a{
+                        background-color: transparent;
+                        opacity: .5;
+                        cursor: default;
+                    }
+                }
+            }
+            &:nth-child(2){
+                @media(max-width:$responsive-xs){
+                clear: both;
+                display: block;
+                }
+            }
+            &:last-child{
+                @media(max-width:$responsive-xs){
+                    display:block;
+                    right:0;
+                    position: absolute;
+                    top:-15px;
+                }
+                &.active{
+                    a{
+                        background-color: transparent;
+                        opacity: .5;
+                        cursor: default;
+                    }
+                }
+            }
+        }
+    }
+}

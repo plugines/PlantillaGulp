@@ -1,0 +1,98 @@
+/*
+GENERALES
+*/
+
+#section-faq{
+	padding-top: 100px;
+	padding-bottom: 220px;
+	background-color: $blanco;
+	color:$gris;
+		@media(max-width:$responsive-xs){
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+
+	h2{
+		font-family: 'ubuntubold';
+		font-size: 24px;
+		font-size: 30px;
+		padding: 20px 0;
+		margin-bottom: 10px;
+		color: $gris;
+	}
+
+	.panel{
+		box-shadow:none;
+	}
+
+	.panel-default{
+		-webkit-border-radius: 0px;
+		-moz-border-radius: 0px;
+		border-radius: 0px;
+		border:none;		
+	}
+
+	.panel-heading{
+		background-color: $blanco-oscuro;
+		-webkit-border-radius: 0px;
+		-moz-border-radius: 0px;
+		border-radius: 0px;
+		border:none;
+		padding:0px;
+		color:$gris;
+		font-family: 'ubuntubold';
+		font-size: 14px;
+
+		h4{
+			padding:0px;
+			display: block;
+		}
+
+		a{
+			font-size: 14px;
+			line-height: 1.2em;
+			display: block;
+			padding:10px;
+			background-color: $blanco-oscuro;
+			padding-left:5%;	
+
+			&.collapsed {
+				background-color:$blanco-oscuro;	
+			}
+
+		}
+	}
+
+	.panel-collapse{
+		border:none;
+		position:relative;
+
+		.flecha-top{
+			right: 50%;
+			font-size: 55px;
+			color: $blanco-oscuro;
+			top: -60px;
+			position: absolute;
+			margin-left: -10px;
+		}
+
+	}
+
+	.panel-body{
+		font-size: 14px;
+		line-height: 1.2em;
+		border:none;
+		font-family: 'ubuntuitalic';
+
+		p{
+			font-size: 14px;
+			line-height: 1.2em;
+			padding-left:30px;		
+		}
+
+		li{
+			list-style: none;
+		}
+	}
+
+}
